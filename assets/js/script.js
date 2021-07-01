@@ -13,7 +13,16 @@ $(document).ready(function() {
         })
     }
     $(".time-block").each(function(i, element) {
-        if ((i + 9) < parseInt(moment().format("hh")))
+        var currentTime = parseInt(moment().format("HH"));
+        if (i < currentTime) {
+            $(element).addClass("past text-black-50");
+            $(element).find("textarea").attr("readonly", "readonly");
+            $(element).find("textarea").addClass("text-black-50");
+        } else if (i == currentTime) {
+            $(element).addClass("present");
+        } else {
+            $(element).addClass("future");
+        }
     })
 });
 
