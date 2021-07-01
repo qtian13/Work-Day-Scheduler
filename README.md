@@ -1,6 +1,5 @@
 # Work-Day-Scheduler
-This project is to create simple calendar application that allows a user to save events for each hour of the day by modifying starter code.
-
+This project is to create simple daily planner that allows users to add important events to it and manage their time effectively
 
 ## Getting Started
 ```console
@@ -10,14 +9,22 @@ git clone https://github.com/qtian13/Work-Day-Scheduler.git
 ## Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Bootstrap](https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css)
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js)
-* [bootstrap](https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css)
 
 ## Description of the Work Day Scheduler
+1. There are two main parts in the page: a jumbotron header and timeblocks from 8am to 5pm
+    * each timeblock is color coded to indicate whether it is in the past, present, or future.
+    * Users can enter an event when they click into a timeblock. The color of text area changes when focused.
+    * The event entered would be saved in the `Local Storage` with a click on save button for the timeblock. The icon become larger when a mouse hover over it.
+    * Saved events persist when page refreshed.
 
 ## Page URL
 https://qtian13.github.io/Work-Day-Scheduler/
+
+## Page Demo
+![Scheduler Demo](assets/images/work_day_scheduler_demo.gif)
 
 ## Page Screen Shot with Different Screen Width
 ![fit desktop screen](assets/images/desktop_screen.png)
