@@ -1,4 +1,6 @@
 var dayToday = moment().format("dddd, MMMM Do");
+// The first time block is 8am
+var timeStarts = 8;
 // get the calendar in Local Storage if there is
 var calendar = JSON.parse(localStorage.getItem("calendar"));
 
@@ -20,10 +22,10 @@ $(document).ready(function() {
     // check each hour block is past, present or future and change the background color
     $(".time-block").each(function(i, element) {
         var currentTime = parseInt(moment().format("HH"));
-        if (i + 8 < currentTime) {
+        if (i + timeStarts < currentTime) {
             $(element).addClass("past text-black-50");
             $(element).find("textarea").addClass("text-black-50");
-        } else if (i + 8 == currentTime) {
+        } else if (i + timeStarts == currentTime) {
             $(element).addClass("present");
         } else {
             $(element).addClass("future");

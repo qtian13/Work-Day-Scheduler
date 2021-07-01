@@ -72,6 +72,11 @@ textarea{
   background-color: rgba(145, 171, 196, 0.7);
 }
 
+textarea {
+  line-height: 25px;
+  scrollbar-width: none;
+}
+
 textarea:focus { 
   outline: none !important;
   border-color: #719ECE;
@@ -98,16 +103,23 @@ i {
 }
 
 @media screen and (max-width: 991px) {
+
+  .jumbotron {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .headline {
+    font-size: 3rem;
+  }
+
   .description {
     font-size: 1.5rem;
   }
 
   #currentDay {
-    font-size: 2.3rem;
-  }
-
-  .hour, textarea {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   i {
@@ -121,6 +133,9 @@ i {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 
   .headline {
     font-size: 2rem;
@@ -134,16 +149,8 @@ i {
     font-size: 1.5rem;
   }
 
-  .row {
-    height: 60px;
-  }
-
-  .hour {
-    line-height: 60px;
-  }
-
-  .hour, textarea {
-    font-size: 1rem;
+  textarea {
+    line-height: 20px;
   }
 
   i {
