@@ -21,6 +21,7 @@ git clone https://github.com/qtian13/Work-Day-Scheduler.git
     * Users can enter an event when they click into a timeblock. The color of text area changes when focused. Scroll bar appears only when in use. 
     * The event entered would be saved in the `Local Storage` with a click on save button for the timeblock. The icon become larger when a mouse hover over it.
     * Saved events persist when page refreshed.
+4. It is a simple daily planner and cannot load/store events before or after the current day.
 
 ## Page URL
 https://qtian13.github.io/Work-Day-Scheduler/
